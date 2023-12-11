@@ -1,0 +1,41 @@
+
+{% load static %}
+
+
+
+<section id="find">
+    <h2>Encuentra</h2>
+    <p>Tus proximas series y peliculas favoritas.</p>
+    <input type="text" id="searchInput" placeholder="Buscar...">
+    <div id="resultsGrid" class="grid-container"></div>        
+    <aside class="block-reserved"><p>Espacio disponible para publicidad</p></aside>
+</section>   
+
+
+<section id="nuevos-lanzamientos">
+    <h2>Series Nuevas</h2>
+    <p>Revisa las últimas películas y series</p>
+    <div class="carousel" >            
+            <figure class="carousel_item active">
+                <img src="{% static 'img/GenV.jpeg' %}" alt="Image 1" class="img-fluid">
+                <figcaption>GenV</figcaption>
+            </figure>
+            <figure class="carousel_item">
+                <img src="{% static 'img/OnePiece.jpeg' %}" alt="Image 2" class="img-fluid">
+                <figcaption>One Piece</figcaption>
+            </figure>
+            <figure class="carousel_item">
+                <img src="{% static 'img/Loki.jpeg' %}" alt="Image 3" class="img-fluid">
+                <figcaption>Loki</figcaption>
+            </figure>            
+    </div>
+    <aside class="block-reserved"><p>Espacio disponible para publicidad</p></aside>
+</section>    
+
+<section id="popular">
+    <h2>Series y Peliculas Populares</h2>
+    <p>Descubre las series y pelicuas mas populares</p>        
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/DDpiJ16yqnM" allowfullscreen></iframe>                        
+    </div>                        
+</section>

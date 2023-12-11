@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1> Review </h1>
+    <h2>{{elem.title}}</h2>
+    <form  method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button>
+            Guardar
+        </button>
+    </form>   
+    
+    <form action="{% url 'sacar_listado' watchlist.id %}" method="POST">
+        {% csrf_token %}        
+        <button>
+            Sacar
+        </button>
+    </form>    
+{% endblock %}

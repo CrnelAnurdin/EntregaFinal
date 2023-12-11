@@ -1,0 +1,17 @@
+<footer>
+    <p>&copy; 2023 Cine y Series Al Dia. All rights reserved.</p>
+    <div class="scroll-to-top" id="scrollToTop">&uarr;</div>
+</footer>
+
+
+
+
+
+<script>                  
+    const letters = document.querySelectorAll('h1 span');
+    letters.forEach((letter, index) => {
+        setTimeout(() => {
+            letter.classList.add('animated');
+        }, 100 * index); 
+    });              
+</script>

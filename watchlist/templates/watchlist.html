@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Watchlist</h1>
+    <ul>
+        {% for item in watchlist %}
+            <li>
+                <a href="{% url 'review' item.id %}">
+                <p>Name: {{ item.id }}</p>
+                <p>Title: {{ item.title }}</p>
+                <p>Description: {{ item.description }}</p>
+                {% if item.visto %}                
+                    <p>Ya visto</p>
+                    <p>Valoracion: {{ item.rate }}</p>
+                {% endif %}
+                <!-- Display other fields as needed -->
+            </li>
+        {% endfor %}
+    </ul>    
+{% endblock %}
+
+
+
+
+
+
+
+
+
+    
